@@ -10,17 +10,16 @@ export class TestComponent implements OnInit{
   @Input() name: string;
   @Input() age: number;
   @Input() description: string;
-  @Output() clickName = new EventEmitter();
-  @Output() clickAge = new EventEmitter();
-  @Output() clickDescription = new EventEmitter();
+  @Output() clickSave = new EventEmitter();
 
+  user:string = 'maria';
   constructor() {
   }
 
   onClickSave() {
-    this.clickAge.emit({
-      name: this.name
-      age: this.age
+    this.clickSave.emit({
+      name: this.name,
+      age: this.age,
       description: this.description
     })
   }

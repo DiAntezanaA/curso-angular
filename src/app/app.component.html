@@ -1,8 +1,22 @@
 <hello name="{{ name }}"></hello>
 <p>
-  Mou
+	Mou
 </p>
 
 <div style="border: 1px solid red;">
-  <app-test name= "mou" (clickAge)="saveClickChild($event)"></app-test>
+	<app-test name="mou" age="20" description="test" (clickSave)="saveClickChild($event)">
+	</app-test>
+
+</div>
+
+<div style="border: 1px solid red;">
+	<app-test name="juan" age="28" description="test1" (clickSave)="saveClickChild($event)">
+	</app-test>
+
+</div>
+
+<div style="border: 1px solid red;">
+	<app-test name="xd" age="322" description="asies" (clickSave)="saveClickChild($event)">
+	</app-test>
+
 </div>
