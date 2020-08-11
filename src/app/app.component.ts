@@ -1,4 +1,4 @@
-import { Component, VERSION, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -6,18 +6,15 @@ import { Component, VERSION, OnInit, Input, Output, EventEmitter } from '@angula
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent implements OnInit{
-  name = 'Angular ' + VERSION.major;
+  title = 'curso-angular';
 
-  @Input() age: number;
-  @Output() clickAge = new EventEmitter();
+  sw = true;
 
-  constructor() {
-  }
+  persona = ['marco', 'maria','jorge', 'lupe']
 
-  onClickSave() {
-    this.clickAge.emit({
+  aux = 3;
 
-      age: this.age
-    })
+  ngOnInit(){
+
   }
 }
