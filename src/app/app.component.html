@@ -31,3 +31,14 @@
 <div [class.test1]="auxClass">
   class example
 </div>
+
+<p>PIPES</p>
+
+<p>PIPE JSON:{{persona | json}}</p>
+<p>PIPE UPPERCASE: {{name | uppercase}}</p>
+<p>PIPE LOWERCASE:{{'RICARDO' | lowecase}}</p>
+
+<p>PIPE DATE {{'08/08/2020' | date: "mm/dd/yy"}}</p>
+
+<p>VAR NAME: {{name | test}}</p>
+<p>{{ 4 | expo: 2}}</p>
